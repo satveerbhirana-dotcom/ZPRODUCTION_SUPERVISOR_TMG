@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_TableForProductionS_S'
+define service ZUI_TABLEFORPRODUCTIONS {
+  expose ZI_TABLEFORPRODUCTIONS_S as TableForProductiAll;
+  expose ZI_TABLEFORPRODUCTIONS as TableForProductionS;
+}

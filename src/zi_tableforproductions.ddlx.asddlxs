@@ -1,0 +1,52 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'TableForProductionS', 
+    typeNamePlural: 'TableForProductionSs', 
+    title: {
+      type: #STANDARD, 
+      label: 'Table For Production Supervisor TMG', 
+      value: 'Plant'
+    }
+  }
+}
+annotate view ZI_TableForProductionS with
+{
+  @UI.identification: [ {
+    position: 1 , 
+    label: 'Plant'
+  } ]
+  @UI.lineItem: [ {
+    position: 1 , 
+    label: 'Plant'
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_TableForProductionS', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Table For Production Supervisor TMG', 
+    position: 1 
+  } ]
+  Plant;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'Production Supervisor'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+     , 
+    label: 'Production Supervisor'
+  } ]
+  Productionsupervisor;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'Production Supervisor Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'Production Supervisor Name'
+  } ]
+  Productionsupervisorname;
+}
